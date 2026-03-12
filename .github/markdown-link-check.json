@@ -1,0 +1,19 @@
+{
+  "projectBaseUrl": "${workspaceFolder}",
+  "ignorePatterns": [
+    { "pattern": "https://huggingface\\.co/nvidia/Cosmos-H-Surgical-Simulator" },
+    { "pattern": "https://github\\.com/NVIDIA-Medtech/Cosmos-H-Surgical-Simulator" },
+    { "pattern": "https://github\\.com/isaac-for-healthcare/i4h-tutorials/issues" }
+  ],
+  "timeout": "20s",
+  "retryOn429": true,
+  "retryCount": 3,
+  "fallbackRetryDelay": "30s",
+  "aliveStatusCodes": [
+    0,
+    200,
+    202,
+    403,
+    429
+  ]
+}

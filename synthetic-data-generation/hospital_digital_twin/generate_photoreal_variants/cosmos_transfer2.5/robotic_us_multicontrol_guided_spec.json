@@ -1,0 +1,20 @@
+{
+    "name": "robotic_us_multicontrol_guided",
+    "prompt_path": "../robotic_us_prompt.txt",
+    "video_path": "../robotic_us_input.mp4",
+    "guided_generation_mask": "../seg/robotic_us_mask.npz",
+    "guided_generation_step_threshold": 25,
+    "guidance": 3,
+    "depth": {
+        "control_path": "../depth/robotic_us_depth.mp4",
+        "control_weight": 1.0
+    },
+    "seg": {
+        "control_path": "../seg/robotic_us_seg.mp4",
+        "control_weight": 1.0
+    },
+    "edge": {
+        "control_path": "../edge/robotic_us_edge.mp4",
+        "control_weight": 0.0
+    }
+}

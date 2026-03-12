@@ -1,0 +1,27 @@
+name: Check Markdown Links
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository content
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install markdown-link-check
+        run: npm install -g markdown-link-check
+
+      - name: Check for broken links
+        run: find . -name "*.md" ! -name "whatsnew_*.md" | xargs -I {} markdown-link-check {} --config .github/markdown-link-check.json
