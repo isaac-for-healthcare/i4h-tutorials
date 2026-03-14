@@ -17,11 +17,11 @@ flowchart LR
 1. **Cosmos-H-Surg**
     - Finetune the Cosmos-H-Surgical-Predict world model on downstream kinematics (optional) and generate video rollouts from initial frames. See [Step1: World Model Finetuning and Rollout](#step1-world-model-finetuning-and-rollout) and the [Cosmos-H-Surgical-Predict](https://github.com/NVIDIA-Medtech/Cosmos-H-Surgical/blob/main/predict/README.md) repo.
 
-2. **IDM**
-    - Train an Inverse Dynamic Model on paired video-kinematic data to generate kinematics from world-model rollouts. See [Step2: Inverse Dynamic Model training](#step2-inverse-dynamic-model-training) and [Downstream video-kinematic paired data](#downstream-video-kinematic-paired-data).
+2. **Inverse Dynamic Model (IDM)**
+    - Train an Inverse Dynamic Model on paired video-kinematic data to generate pseudo-kinematics from world-model rollouts. See [Step2: Inverse Dynamic Model training](#step2-inverse-dynamic-model-training) and [Downstream video-kinematic paired data](#downstream-video-kinematic-paired-data).
 
-3. **Cosmos R Surg — Labeling & Filtering Good/bad dreams**
-    - Use the rollouts and IDM-generated kinematics for GR00T VLA policy training, with labeling and filtering of good/bad dreams. See [Step3: GR00T VLA policy training](#step3-gr00t-vla-policy-training). For style augmentation and transfer, see [Cosmos-H-Surgical-Transfer](https://github.com/NVIDIA-Medtech/Cosmos-H-Surgical/tree/main/transfer).
+3. **Cosmos R Surg — Labeling & Filtering Good/bad dreams** (coming soon)
+    - Use the rollouts and IDM-generated kinematics for GR00T VLA policy training, with labeling and filtering of good/bad dreams.
 
 ---
 
