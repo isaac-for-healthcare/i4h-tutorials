@@ -6,7 +6,7 @@ The surgical robotic synthetic data pipeline flows from teleoperation through wo
 
 ```mermaid
 flowchart LR
-    A("Tele-op") --> B("Cosmos-H-Surgical-ActionControl")
+    A("Tele-op") --> B("Cosmos-H-Surgical-Simulator")
     B --> C("Record")
     C --> D("Style Augmentation & Domain Randomization")
 ```
