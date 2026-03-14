@@ -35,7 +35,7 @@ This tutorial covers the essential methods for acquiring or creating 3D models o
        [Download high‑res Ultrasound Machine GIF](https://developer.download.nvidia.com/assets/Clara/i4h/operating_room/ultrasoundusgmachine_highres.gif)
 
 1. **Pre-made 3D Assets - Isaac For Healthcare Operating Room**
-   Use asset libraries for common OR components, devices, general anatomy, and props ([https://github.com/isaac-for-healthcare/i4h-asset-catalog/blob/main/docs/catalog_helper.md](https://github.com/isaac-for-healthcare/i4h-asset-catalog/blob/main/docs/catalog_helper.md))
+   Use asset libraries for common OR components, devices, general anatomy, and props ([https://github.com/isaac-for-healthcare/i4h-asset-catalog/blob/main/i4h_asset_helper/README.md](https://github.com/isaac-for-healthcare/i4h-asset-catalog/blob/main/i4h_asset_helper/README.md))
 
    **Where to find:**
 
