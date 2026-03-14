@@ -25,5 +25,5 @@ flowchart LR
 3. **Material properties assignment**
     - Define textures and material properties on the USD assets (coming soon)
 
-4. **Style Augmentation + Photoreal Rendering**
+4. **Style Augmentation + Photoreal Rendering** (Cosmos-H-Surgical-Transfer)
     - [Apply style augmentation and photorealistic rendering](https://github.com/NVIDIA-Medtech/Cosmos-H-Surgical/tree/main/transfer)
