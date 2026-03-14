@@ -1,4 +1,4 @@
-# Post-Training Cosmos-H-Surgical-Simulator for Custom Surgical Robotics Dataset
+# Cosmos-H-Surgical-Simulator for Custom Surgical Robotics Dataset
 
 ## Pipeline Overview
 
@@ -16,14 +16,14 @@ flowchart LR
 1. **Tele-op**
     - Collect human-driven trajectories in simulation or on real hardware. See the [Hospital Digital Twin](../hospital_digital_twin/) pipeline for robot rigging, bring-your-own-OR, and OpenXR teleoperation.
 
-2. **Cosmos-H-Surg-AC**
-    - This tutorial covers **post-training Cosmos-H-Surgical-Simulator** (a learned world model / generative physics simulator) on a custom surgical robotics dataset for policy evaluation and synthetic rollouts. It fits the “Cosmos-H-Surg-AC” stage above.
+2. **Cosmso-H-Surgical-Simulator**
+    - This tutorial covers **post-training Cosmos-H-Surgical-Simulator** (a learned world model / generative physics simulator) on a custom surgical robotics dataset for policy evaluation and synthetic rollouts.
 
 3. **Record**
     - Record rollouts (video + kinematics) from the simulator or from tele-op for downstream training and evaluation.
 
-4. **Style Augmentation & Domain Randomization (e.g., Cosmos-T-Surg)**
-    - Apply transfer models such as Cosmos-T-Surg to augment realism and diversity. See [Hospital Digital Twin — Generate photorealistic variants](../hospital_digital_twin/generate_photoreal_variants/cosmos_transfer2.5/README.md) and [Surgical Robotic Video Generator](../surgical_robotic_video_generator/) for related workflows.
+4. **Style Augmentation & Domain Randomization**
+    - Apply transfer models such as Cosmos-H-Surgical-Transfer to augment realism and diversity. See [Hospital Digital Twin — Generate photorealistic variants](../hospital_digital_twin/generate_photoreal_variants/cosmos_transfer2.5/README.md) and [Surgical Robotic Video Generator](../surgical_robotic_video_generator/) for related workflows.
 
 This tutorial guides you through post-training (finetuning) Cosmos-H-Surgical-Simulator, a pre-trained version
 of [Cosmos Predict 2.5](https://github.com/nvidia-cosmos/cosmos-predict2.5) on the [Open-H embodiment](https://github.com/open-h-embodiment/data-collection) surgical robotics dataset.
