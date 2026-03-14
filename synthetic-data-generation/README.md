@@ -14,12 +14,11 @@ Turn clinical data (imaging, physiological) into simulation-ready 3D assets in U
 
 ### [Hospital Digital Twin](hospital_digital_twin/)
 
-Turn real-world or authored environments into simulation-ready scenes: environment creation, layout, robot rigging, teleoperation, trajectory generation, and recording.
+Turn real-world or authored environments into simulation-ready environment: environment creation, robot rigging, teleoperation, recording, trajectory generation, and visual style augmentation.
 
-- [Environment creation](hospital_digital_twin/README.md#1-environment-creation) — Real2sim (NuRec), sim-ready OR assets
-- [Robot rigging + Tele-op](hospital_digital_twin/README.md#4-robot-rigging--tele-op) — Bring your own OR, robot, or XR
-- [Generate robot trajectories](./hospital_digital_twin/generate_robot_trajectories/README.md)
-- [Generate photorealistic variants (Cosmos Transfer 2.5)](./hospital_digital_twin/generate_photoreal_variants/cosmos_transfer2.5/README.md)
+- [Environment creation](hospital_digital_twin/README.md#-environment-creation) — Bring your own OR, robot rigging
+- [Data Collection](hospital_digital_twin/README.md#data-collection) — Teleop, Bring your own XR, recording
+- [Data Augmentation](hospital_digital_twin/README.md#data-generation) — Mimicgen, cosmos-transfer
 
 ### [Robot Digital Twin](robot_digital_twin/)
 

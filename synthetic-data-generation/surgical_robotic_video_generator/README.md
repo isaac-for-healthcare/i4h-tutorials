@@ -127,8 +127,14 @@ cp $HOME/scripts/GR00T-Dreams/idm_training.py $HOME/GR00T-Dreams/scripts/idm_tra
 
 ## 1.4. Dataset download
 
+Apply access on [MedbotWorld dataset](https://huggingface.co/datasets/toumai-eco/MedbotWorld)
+
 ```bash
-wget -P $HOME/dataset/downstream <URL-TO-BE-UPLOADED>  # Download hdf5 files and save to ./dataset/downstream
+ # Download hdf5 files and save to ./dataset/downstream, you need to apply for access.
+hf download toumai-eco/MedbotWorld \
+  --repo-type dataset \
+  --include "*.hdf5" \
+  --local-dir $HOME/dataset/downstream
 ```
 
 ## 1.5. Dataset Conversion
