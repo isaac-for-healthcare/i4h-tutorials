@@ -8,14 +8,14 @@ The pipeline flows from world-model rollout through inverse dynamics to policy t
 
 ```mermaid
 flowchart LR
-    A("Cosmos-H-Surg") --> B("IDM")
+    A("Cosmos-H-Surgical-Predict") --> B("IDM")
     B --> C("Cosmos R Surg<br/>Labeling & Filtering Good/bad dreams")
 ```
 
 ## Available Components
 
-1. **Cosmos-H-Surg**
-    - Finetune the Cosmos-H-Surgical-Predict world model on downstream kinematics (optional) and generate video rollouts from initial frames. See [Step1: World Model Finetuning and Rollout](#step1-world-model-finetuning-and-rollout) and the [Cosmos-H-Surgical-Predict](https://github.com/NVIDIA-Medtech/Cosmos-H-Surgical/blob/main/predict/README.md) repo.
+1. **Cosmos-H-Surgical-Predict**
+    - Finetune the Cosmos-H world model on downstream kinematics (optional) and generate video rollouts from initial frames. See [Step1: World Model Finetuning and Rollout](#step1-world-model-finetuning-and-rollout) and the [Cosmos-H-Surgical-Predict](https://github.com/NVIDIA-Medtech/Cosmos-H-Surgical/blob/main/predict/README.md) repo.
 
 2. **Inverse Dynamic Model (IDM)**
     - Train an Inverse Dynamic Model on paired video-kinematic data to generate pseudo-kinematics from world-model rollouts. See [Step2: Inverse Dynamic Model training](#step2-inverse-dynamic-model-training) and [Downstream video-kinematic paired data](#downstream-video-kinematic-paired-data).
