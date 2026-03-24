@@ -1,4 +1,4 @@
-# Cosmos-H-Surgical-Simulator for Custom Surgical Robotics Dataset
+# Surgical Robotic Generative Physics Simulator
 
 ## Pipeline Overview
 
